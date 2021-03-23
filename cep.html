@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>ViaCEP Webservice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="./cep.css" type="text/css">
+
+</head>
+
+<body>
+    <!-- Inicio do formulario -->
+    <div id="campos">
+        <!--<form method="get" action="#">-->
+        <div class="container">
+            <div class="row">
+                <h1>Informe seu Cep</h1>
+                <div class="lb">
+                    <label for="cep">Cep:</label>
+                    <input name="cep" type="text" id="cep" placeholder="Insira seu CEP " value="" maxlength="9"
+                        onblur="pesquisacep(this.value);" /><br />
+                </div>
+                <div class="lb">
+                    <input name="rua" type="text" id="rua" placeholder="Rua..."/><br />
+                </div>
+
+                <div class="lb">
+                    <input name="bairro" type="text" id="bairro" placeholder="Bairo..."/><br />
+                </div>
+
+                <div class="lb">
+                    <input name="cidade" type="text" id="cidade" placeholder="Cidade..." /><br />
+                </div>
+
+                <div class="lb">
+                    <input name="uf" type="text" id="uf" placeholder="Estado..."/><br />
+                </div>
+
+                <div class="lb">
+                    <input name="ibge" type="text" id="ibge" placeholder="ibge..." /><br />
+                    <div class="bt">
+                    </div>
+
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <button class="botao" onclick="endereco()">enviar</button>
+                <button class="botao" onclick="limpa_formulario_cep()">limpar</button>
+
+            </div>
+
+            <script src="./cep.js"></script>
+      
+            <img class="uni2" src="./img/animal-2069717_1280.png" alt="unicornio2">
+
+</body>
+
+</html>
