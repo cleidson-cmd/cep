@@ -19,7 +19,19 @@ h1{
     display: block;
     padding-left: 10px;
     border-radius: 11px;
+    border-style: double;
+    border-width: 10;
+    border-color: rgb(0, 0, 0);
 }
+
+.cepp{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
 
 .uni2{
     position: absolute;
@@ -33,6 +45,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
+    
 }
 
 
@@ -64,7 +77,13 @@ input{
     position: absolute;
     width: 300px;
     padding: 10px;
-    border-radius: 30px;/*para deixar a borda arredondada*/
+    border-radius: 10px;/*para deixar a borda arredondada*/
+    text-align: center;
+    border-width: 0px;
+}
+#cep{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
 }
 
 .botao{  
