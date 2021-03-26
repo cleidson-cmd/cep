@@ -16,14 +16,16 @@
         <!--<form method="get" action="#">-->
         <div class="container">
             <div class="row">
-                <h1>Informe seu Cep</h1>
+
+             
+                <legend><h1>Busca com Cep</h1></legend>
                 <div class="lb">
-                    <label for="cep">Cep:</label>
                     <input name="cep" type="text" id="cep" placeholder="Insira seu CEP " value="" maxlength="9"
                         onblur="pesquisacep(this.value);" /><br />
                 </div>
+
                 <div class="lb">
-                    <input name="rua" type="text" id="rua" placeholder="Rua..." disabled/><br />
+                    <input name="logradouro" type="text" id="logradouro" placeholder="Rua..." disabled/><br />
                 </div>
 
                 <div class="lb">
@@ -31,24 +33,22 @@
                 </div>
 
                 <div class="lb">
-                    <input name="cidade" type="text" id="cidade" placeholder="Cidade..." disabled/><br />
+                    <input name="localidade" type="text" id="localidade" placeholder="Cidade..." disabled/><br />
                 </div>
 
                 <div class="lb">
                     <input name="uf" type="text" id="uf" placeholder="Estado..." disabled/><br />
                 </div>
 
+
                 <div class="lb">
                     <input name="ibge" type="text" id="ibge" placeholder="ibge..." disabled/><br />
-                    <div class="bt">
-                    </div>
-
-                   
-
-
                 </div>
-                <br>
-                <br>
+
+                <div class="lb">
+                    <input name="ddd" type="text" id="ddd" placeholder="DDD..." disabled/><br />
+                </div>
+        
                 <br>
                 <button class="botao" onclick="endereco()">enviar</button>
                 <button class="botao" onclick="limpa_formulario_cep()">limpar</button>
