@@ -1,33 +1,36 @@
 function endereco() {
     var cep = document.getElementById("cep");
     var url = "https://viacep.com.br/ws/" + cep.value + "/json/";
-    
 
 
-    var rua = document.getElementById("rua");
+
+    var logradouro = document.getElementById("logradouro");
     var bairro = document.getElementById("bairro");
-    var cidade = document.getElementById("cidade");
-    var uf = document.getElementById("uf");
+    var localidade = document.getElementById("localidade");
+    var uf = document.getElementById("uf");  
     var ibge = document.getElementById("ibge");
+    var ddd = document.getElementById("ddd");
 
     fetch(url, { method: 'GET' })
         .then(response => {
             response.json()
                 .then(data => {
 
-                    rua.value = data.rua;
+                    logradouro.value = data.logradouro;
                     bairro.value = data.bairro;
-                    cidade.value = data.cidade;
+                    localidade.value = data.localidade;
                     uf.value = data.uf;
                     ibge.value = data.ibge;
+                    ddd.value = data.ddd;
                 })
         })
         .catch(err => {
-            rua.value = "";
+            logradouro.value = "";
             bairro.value = "";
-            cidade.value = "";
+            localidade.value = "";
             uf.value = "";
             ibge.value = "";
+            ddd.value = "";
             alert("CEP não encontrado");
 
         })
@@ -37,11 +40,12 @@ function endereco() {
 function limpa_formulario_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('cep').value = ("");
-    document.getElementById('rua').value = ("");
+    document.getElementById('logradouro').value = ("");
     document.getElementById('bairro').value = ("");
-    document.getElementById('cidade').value = ("");
+    document.getElementById('localidade').value = ("");
     document.getElementById('uf').value = ("");
     document.getElementById('ibge').value = ("");
+    document.getElementById('ddd').value = ("");
 }
 
 
