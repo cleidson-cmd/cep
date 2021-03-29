@@ -15,6 +15,7 @@ function endereco() {
         .then(response => {
             response.json()
                 .then(data => {
+                    this.ibge(data.localidade)
 
                     logradouro.value = data.logradouro;
                     bairro.value = data.bairro;
@@ -37,6 +38,12 @@ function endereco() {
 }
 
 
+function ibge(cidade){
+    document.getElementById("divIBGE").innerHTML = "<a href='https://cidades.ibge.gov.br/brasil/ba/" + cidade.toLowerCase() + "/panorama'>informações</a>";
+
+}
+
+
 function limpa_formulario_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('cep').value = ("");
@@ -48,4 +55,6 @@ function limpa_formulario_cep() {
     document.getElementById('ddd').value = ("");
 }
 
-
+var input = document.querySelector("localidade");
+var texto = input.value;
+console.log(texto);
