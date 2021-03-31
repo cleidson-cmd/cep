@@ -39,7 +39,7 @@ function endereco() {
 
 
 function ibge(cidade){
-    document.getElementById("divIBGE").innerHTML = "<a href='https://cidades.ibge.gov.br/brasil/ba/" + cidade.toLowerCase() + "/panorama'>informações</a>";
+    document.getElementById("divIBGE").innerHTML = "<a href='https://cidades.ibge.gov.br/brasil/ba/" + cidade.toLowerCase() + "/panorama'>Detalhes da Cidade</a>";
 
 }
 
