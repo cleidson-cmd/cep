@@ -17,49 +17,52 @@
         <div class="container">
             <div class="row">
 
-             
-                <legend><h1>Busca com Cep</h1></legend>
+
+                <legend>
+                    <h1>Busca com Cep</h1>
+                </legend>
                 <div class="lb">
-                    <input name="cep" type="text" id="cep" placeholder="Insira seu CEP " value="" maxlength="9"
-                         /><br />
+                    <input name="cep" type="text" id="cep" placeholder="Insira seu CEP " value="" maxlength="9" /><br />
                 </div>
 
                 <div class="lb">
-                    <input name="logradouro" type="text" id="logradouro" placeholder="Rua..." disabled/><br />
+                    <input name="logradouro" type="text" id="logradouro" placeholder="Rua..." disabled /><br />
                 </div>
 
                 <div class="lb">
-                    <input name="bairro" type="text" id="bairro" placeholder="Bairo..." disabled/><br />
+                    <input name="bairro" type="text" id="bairro" placeholder="Bairo..." disabled /><br />
                 </div>
 
                 <div class="lb">
-                    <input name="localidade" type="text" id="localidade" placeholder="Cidade..." disabled/><br />
+                    <input name="localidade" type="text" id="localidade" placeholder="Cidade..." disabled /><br />
                 </div>
 
                 <div class="lb">
-                    <input name="uf" type="text" id="uf" placeholder="Estado..." disabled/><br />
+                    <input name="uf" type="text" id="uf" placeholder="Estado..." disabled /><br />
                 </div>
 
 
                 <div class="lb">
-                    <input name="ibge" type="text" id="ibge" placeholder="ibge..." disabled/><br />
+                    <input name="ibge" type="text" id="ibge" placeholder="ibge..." disabled /><br />
                 </div>
 
                 <div class="lb">
-                    <input name="ddd" type="text" id="ddd" placeholder="DDD..." disabled/><br />
+                    <input name="ddd" type="text" id="ddd" placeholder="DDD..." disabled /><br />
                 </div>
-        
+
                 <br>
-                <button class="botao" onclick="endereco()">E N V I A R</button>
-                <button class="botao" onclick="limpa_formulario_cep()">L I M P A R</button>
-
+                
+                <div class="div_bt">
+                    <button class="botao" onclick="endereco()">E N V I A R</button>
+                    <button class="botao" onclick="limpa_formulario_cep()">L I M P A R</button>
+                </div>
             </div>
-             
+
             <div id="divIBGE"></div>
 
             <script src="./cep.js"></script>
-      
-            
+        </div>
+    </div>
 
 </body>
 
