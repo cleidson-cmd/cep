@@ -41,6 +41,7 @@ a{
 
 .container{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     position: absolute;
     
@@ -61,6 +62,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;  
+}
+
+#row{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -105,6 +111,6 @@ input{
     width: 220px;
     position: absolute;
     border-style: double;
-    border-color: black;
-    
+    border-color: black;   
 }
+
