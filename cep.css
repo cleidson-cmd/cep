@@ -1,91 +1,55 @@
-h1{
-    text-align:center;
-    font-family:sans-serif;
-    color: #ffffff;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-
-
-#campos{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background: rgba(11,22,33,0.5);
-    width: 500px;
-    height: 500px;
-    padding: 0.2em;
-    border: 1px solid #59429d;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
-    padding-left: 10px;
-    border-radius: 11px;
-    border-style: double;
-    border-width: 10;
-    border-color: rgb(0, 0, 0);
-}
-
-.cepp{
-    display: flex;
-    justify-content: center;
-    
-}
-
-
-
-
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: absolute;
-    
-}
-
-
 body{
+    margin: auto;
     margin-top: 50px;
-    display: flex;
     background-image: url("https://www.hardware.com.br/filters:format:(jpeg)/@/static/wp/2019/08/31/SMART.jpg");
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
+}
+
+
+h1{
+    margin: auto;
+    font-family:sans-serif;
+    color: #ffffff;
+}
+
+.container{
+    display: flex;
     justify-content: center;
 }
 
-.bt{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end;  
-}
-
-#row{
-    display: flex;
+.row{
+    all:none;
     justify-content: center;
-}
-
+    height: 550px;
+    width: 90%;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    border-radius: 11px;
+    border-style: double;
+    border-width: 10;
+    border-color: rgba(0,0,0,0.2);
+} 
 
 .lb{
-    display: flex;
-    justify-content: space-around;
-    margin: 30px;
+    
+    margin: 0px;
     color: rgba(0,0,0,0);
+    text-align: center;
 }
 
 
 input{
-    position: absolute;
+    margin:auto;
+    display: flex;
     width: 300px;
     padding: 10px;
     border-radius: 10px;/*para deixar a borda arredondada*/
     text-align: center;
     border-width: 0px;
 }
+
 #cep{
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
@@ -97,9 +61,34 @@ input{
     padding: 10px;
     width: 220px;
     border-radius: 20px;
-    background: rgba(0,0,0,0.4);
-    
+    background: rgba(0,0,0,0.4);  
 }
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.cepp{
+    display: flex;
+    justify-content: center;   
+}
+
+
+.bt{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;  
+}
+
+
 
 
 
@@ -113,4 +102,12 @@ input{
     border-style: double;
     border-color: black;   
 }
+
+.div_bt{
+    display: flexbox;
+    text-align:center;
+    height:100px;
+    height: 100px;
+}
+ 
 
